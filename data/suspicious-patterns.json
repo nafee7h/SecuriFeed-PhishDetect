@@ -1,0 +1,28 @@
+{
+  "keywords": [
+    "login",
+    "secure",
+    "verify",
+    "update",
+    "paypal",
+    "bank",
+    "crypto",
+    "wallet",
+    "bonus",
+    "free"
+  ],
+
+  "suspicious_tlds": [
+    ".xyz",
+    ".tk",
+    ".ru",
+    ".top",
+    ".gq"
+  ],
+
+  "lookalike_patterns": [
+    "0",
+    "1",
+    "@"
+  ]
+}

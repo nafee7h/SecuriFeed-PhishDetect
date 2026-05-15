@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SecuriFeed — PhishDetect</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <script defer src="js/utils.js"></script>
+  <script defer src="js/analyzer.js"></script>
+  <script defer src="js/ui.js"></script>
+  <script defer src="js/news.js"></script>
+  <script defer src="js/animations.js"></script>
+  <script defer src="js/app.js"></script>
+</head>
+
+<body>
+
+  <!-- Animated Background -->
+  <div class="bg-grid"></div>
+  <div class="particles"></div>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo-section">
+      <h1 class="logo glow-text">SecuriFeed</h1>
+      <p class="tagline">Advanced Phishing Detection Dashboard</p>
+    </div>
+
+    <div class="header-right">
+      <div class="clock glass" id="clock">
+        00:00:00
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero glass fade-up">
+
+    <div class="hero-content">
+
+      <h2>
+        Detect Phishing URLs <span class="highlight">Instantly</span>
+      </h2>
+
+      <p class="hero-text">
+        Analyze suspicious links using cybersecurity-inspired
+        threat intelligence and phishing detection logic.
+      </p>
+
+      <!-- SEARCH -->
+      <div class="search-box">
+
+        <input
+          type="text"
+          id="urlInput"
+          placeholder="Enter suspicious URL..."
+        />
+
+        <button id="analyzeBtn">
+          Analyze URL
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- DASHBOARD -->
+  <section class="dashboard grid">
+
+    <!-- Risk Score -->
+    <div class="card glass fade-up">
+
+      <h3>Threat Risk Score</h3>
+
+      <div class="risk-circle" id="riskCircle">
+        0
+      </div>
+
+      <p class="risk-level" id="riskLevel">
+        SAFE
+      </p>
+
+    </div>
+
+    <!-- Threats -->
+    <div class="card glass fade-up">
+
+      <h3>Detected Threats</h3>
+
+      <ul id="threatList" class="list">
+        <li>No threats detected</li>
+      </ul>
+
+    </div>
+
+    <!-- Recommendations -->
+    <div class="card glass fade-up">
+
+      <h3>Security Recommendations</h3>
+
+      <ul id="recommendations" class="list">
+        <li>System waiting for analysis...</li>
+      </ul>
+
+    </div>
+
+    <!-- Stats -->
+    <div class="card glass fade-up">
+
+      <h3>Threat Statistics</h3>
+
+      <div class="stats-grid">
+
+        <div class="stat-box">
+          <h2 id="scanCount">0</h2>
+          <p>Total Scans</p>
+        </div>
+
+        <div class="stat-box danger">
+          <h2 id="dangerCount">0</h2>
+          <p>Dangerous URLs</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- LIVE MONITOR -->
+  <section class="glass monitor-section fade-up">
+
+    <div class="section-header">
+      <h2>Live Threat Activity</h2>
+    </div>
+
+    <div id="activityFeed" class="feed-container">
+
+      <div class="feed-item">
+        Monitoring suspicious network traffic...
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CYBER NEWS -->
+  <section class="glass news-section fade-up">
+
+    <div class="section-header">
+      <h2>Cyber Threat Feed</h2>
+    </div>
+
+    <div id="newsContainer" class="news-grid">
+
+      <!-- Dynamic News Cards -->
+
+    </div>
+
+  </section>
+
+  <!-- ANALYTICS -->
+  <section class="analytics-section grid">
+
+    <div class="card glass">
+
+      <h3>System Status</h3>
+
+      <div class="status-box">
+
+        <div class="status-item">
+          <span class="dot green"></span>
+          Threat Engine Active
+        </div>
+
+        <div class="status-item">
+          <span class="dot blue"></span>
+          URL Scanner Online
+        </div>
+
+        <div class="status-item">
+          <span class="dot red"></span>
+          Live Monitoring Enabled
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="card glass">
+
+      <h3>Threat Intelligence</h3>
+
+      <div class="threat-bars">
+
+        <div class="bar">
+          <span>Phishing</span>
+          <div class="progress">
+            <div class="progress-fill fill1"></div>
+          </div>
+        </div>
+
+        <div class="bar">
+          <span>Malware</span>
+          <div class="progress">
+            <div class="progress-fill fill2"></div>
+          </div>
+        </div>
+
+        <div class="bar">
+          <span>Botnets</span>
+          <div class="progress">
+            <div class="progress-fill fill3"></div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <p>
+      SecuriFeed © 2026 | Cybersecurity Monitoring System
+    </p>
+
+  </footer>
+
+</body>
+</html>

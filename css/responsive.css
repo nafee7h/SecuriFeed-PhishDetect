@@ -1,0 +1,79 @@
+@media(max-width:1000px){
+
+.hero h2{
+  font-size:2.4rem;
+}
+
+.search-box input{
+  width:100%;
+}
+
+}
+
+@media(max-width:768px){
+
+.header{
+  flex-direction:column;
+  gap:20px;
+  text-align:center;
+}
+
+.hero{
+  padding:40px 20px;
+}
+
+.hero h2{
+  font-size:2rem;
+}
+
+.search-box{
+  flex-direction:column;
+}
+
+.search-box input{
+  width:100%;
+}
+
+.search-box button{
+  width:100%;
+}
+
+.grid{
+  grid-template-columns:1fr;
+}
+
+.stats-grid{
+  grid-template-columns:1fr;
+}
+
+.news-grid{
+  grid-template-columns:1fr;
+}
+
+.risk-circle{
+  width:130px;
+  height:130px;
+  font-size:2rem;
+}
+
+}
+
+@media(max-width:500px){
+
+.logo{
+  font-size:2.2rem;
+}
+
+.hero h2{
+  font-size:1.7rem;
+}
+
+.hero-text{
+  font-size:0.95rem;
+}
+
+.card{
+  padding:20px;
+}
+
+}
